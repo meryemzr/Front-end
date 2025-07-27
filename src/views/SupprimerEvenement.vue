@@ -33,7 +33,7 @@ export default {
     },
     async chargerEvenements() {
       try {
-        const res = await axios.get('http://localhost:5000/api/evenements')
+        const res = await axios.get('https://back-end-bny2.onrender.com/api/evenements')
         this.evenements = res.data
       } catch (err) {
         this.message = '❌ Erreur lors du chargement des événements'

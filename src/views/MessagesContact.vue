@@ -33,7 +33,7 @@ export default {
       this.loading = true;
       this.error = null;
       try {
-        const response = await axios.get('http://localhost:5000/api/contacts');
+        const response = await axios.get('https://back-end-bny2.onrender.com/api/contacts');
         this.messages = response.data;
       } catch (err) {
         this.error = 'Erreur lors du chargement des messages.';

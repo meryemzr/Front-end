@@ -29,7 +29,7 @@ export default {
     async ajouterAdmin() {
       const token = localStorage.getItem('token')
       try {
-        const res = await axios.post('http://localhost:5000/api/admin/ajout-admin', this.form, {
+        const res = await axios.post('https://back-end-bny2.onrender.com/api/admin/ajout-admin', this.form, {
           headers: { Authorization: `Bearer ${token}` }
         })
         this.message = res.data.message

@@ -33,7 +33,7 @@ export default {
   methods: {
     async ajouterEvenement() {
       try {
-        const response = await axios.post('http://localhost:5000/api/evenements', this.form)
+        const response = await axios.post('https://back-end-bny2.onrender.com/api/evenements', this.form)
         this.message = `✅ Événement ajouté : ${response.data.nom}`
         this.form = { nom: '', date: '', lieu: '', genre: '' } // Réinitialise le formulaire
       } catch (error) {

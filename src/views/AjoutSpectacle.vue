@@ -42,7 +42,7 @@ export default {
             ? this.form.distribution.split(',').map(d => d.trim())
             : []
         }
-        await axios.post('http://localhost:5000/api/spectacles', data)
+        await axios.post('https://back-end-bny2.onrender.com/api/spectacles', data)
         this.message = 'Spectacle ajouté avec succès !'
         this.form = {
           titre: '',

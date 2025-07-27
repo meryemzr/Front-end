@@ -120,7 +120,7 @@ export default {
         this.form.message
       ) {
         try {
-          const response = await axios.post('http://localhost:5000/api/contacts', this.form);
+          const response = await axios.post('https://back-end-bny2.onrender.com/api/contacts', this.form);
           if (response.data.success) {
             this.successMessage = "Votre message a été envoyé avec succès ✅";
             this.form = { nom: "", email: "", sujet: "", message: "" };

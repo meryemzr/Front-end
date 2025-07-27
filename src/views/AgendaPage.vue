@@ -46,7 +46,7 @@ import axios from 'axios';
 export default {
   name: 'AgendaPage',
   setup() {
-    const API_BASE = 'http://localhost:5000'; // adapte si besoin
+    const API_BASE = 'https://back-end-bny2.onrender.com'; // adapte si besoin
     const evenements = ref([]);
     const lieuSelectionne = ref('');
     const genreSelectionne = ref('');

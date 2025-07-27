@@ -35,7 +35,7 @@ export default {
   async created() {
     const id = this.$route.params.id
     try {
-      const response = await axios.get(`http://localhost:5000/api/spectacles/${id}`)
+      const response = await axios.get(`https://back-end-bny2.onrender.com/api/spectacles/${id}`)
       const spectacle = response.data
 
       // Pré-remplir le formulaire avec les données reçues

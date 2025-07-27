@@ -57,7 +57,7 @@ export default {
     }
 
     try {
-      const response = await axios.get('http://localhost:5000/api/admin/dashboard', {
+      const response = await axios.get('https://back-end-bny2.onrender.com/api/admin/dashboard', {
         headers: { Authorization: `Bearer ${token}` }
       })
       this.userId = response.data.user.id

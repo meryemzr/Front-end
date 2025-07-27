@@ -35,7 +35,7 @@ export default {
   methods: {
     async chargerSpectacles() {
       try {
-        const res = await axios.get('http://localhost:5000/api/spectacles')
+        const res = await axios.get('https://back-end-bny2.onrender.com/api/spectacles')
         this.spectacles = res.data
       } catch (err) {
         console.error('Erreur lors du chargement des spectacles:', err)
