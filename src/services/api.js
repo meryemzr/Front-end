@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:5000/api', // L'URL de ton back-end
+  baseURL: 'https://back-end-bny2.onrender.com/api', // L'URL de ton back-end
 });
 
 export default api;
