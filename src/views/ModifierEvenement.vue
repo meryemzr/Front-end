@@ -62,7 +62,7 @@ export default {
     },
     async modifierEvenement() {
       try {
-        await axios.put(`http://localhost:5000/api/evenements/${this.selectedId}`, this.form)
+        await axios.put(`https://back-end-bny2.onrender.com/api/evenements/${this.selectedId}`, this.form)
         this.message = '✅ Événement modifié avec succès'
       } catch (err) {
         this.message = '❌ Erreur lors de la modification'

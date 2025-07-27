@@ -44,7 +44,7 @@ export default {
     async supprimerSpectacle(id) {
       if (confirm('Confirmer la suppression de ce spectacle ?')) {
         try {
-          await axios.delete(`http://localhost:5000/api/spectacles/${id}`)
+          await axios.delete(`https://back-end-bny2.onrender.com/api/spectacles/${id}`)
           this.spectacles = this.spectacles.filter(s => s._id !== id)
           this.message = '✅ Spectacle supprimé avec succès.'
         } catch (err) {

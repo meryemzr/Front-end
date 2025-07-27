@@ -42,7 +42,7 @@ export default {
     async supprimer(id) {
       if (confirm('Voulez-vous vraiment supprimer cet événement ?')) {
         try {
-          await axios.delete(`http://localhost:5000/api/evenements/${id}`)
+          await axios.delete(`https://back-end-bny2.onrender.com/api/evenements/${id}`)
           this.message = '✅ Événement supprimé avec succès'
           this.evenements = this.evenements.filter(e => e.id !== id)
         } catch (err) {

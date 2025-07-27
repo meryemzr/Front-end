@@ -60,7 +60,7 @@ export default {
       }
 
       try {
-        await axios.put(`http://localhost:5000/api/spectacles/${id}`, payload)
+        await axios.put(`https://back-end-bny2.onrender.com/api/spectacles/${id}`, payload)
         this.message = 'Spectacle modifié avec succès !'
       } catch (err) {
         this.message = err.response?.data?.message || 'Erreur lors de la modification'

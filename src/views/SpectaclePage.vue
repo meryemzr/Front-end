@@ -59,7 +59,7 @@ export default {
   setup() {
     const spectacles = ref([]);
     const spectacleSelectionne = ref(null);
-    const API_BASE = 'http://localhost:5000';
+    const API_BASE = 'https://back-end-bny2.onrender.com';
 
     const fetchSpectacles = async () => {
       try {
